@@ -1,0 +1,19 @@
+#navi {
+    position:fixed; left:50px; top:50%; transform: translateY(-50%); z-index: 3;
+    > li {
+        &.on > a {height:100px; background: #000;}
+        > a {display: block; width:3px; height:40px; background: #888;  margin-bottom: 20px;
+            transition: .5s;}
+    } 
+}
+
+@media screen and (max-width:$tablet) {
+    //navi
+    #navi {
+        left:10px;
+    }
+}
+
+@media screen and (max-width:$mobile) {
+
+}

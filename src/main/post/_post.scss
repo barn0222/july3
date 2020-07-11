@@ -1,0 +1,166 @@
+
+/*post*/
+#post {
+    width: 100%;  padding-bottom: 100px;
+    .inner {
+        width: 1180px; margin: 0 auto; 
+         > h1 {text-indent: -9999px;}
+         .wrap {
+            &::after {content:''; clear:both; display: block;}
+             article {
+                 float:left;
+                 &:nth-of-type(1)  {width:260px; }
+                 &:nth-of-type(1) > div:nth-of-type(1) {
+                   height:330px; 
+                   background: #000;
+                   transform: translateY(-100px);
+                   margin: 0px;
+                   padding: 50px 30px;
+                   box-sizing: border-box;
+                   color:#fff;
+                   text-align: center;
+               }
+                 &:nth-of-type(1) > div:nth-of-type(1) > i {
+                   font-size: 150px;
+                   margin-bottom: 20px;
+               }
+               
+                 &:nth-of-type(1) > div:nth-of-type(1) > div > h2 {margin-bottom:10px;}
+                 &:nth-of-type(1) > div:nth-of-type(2) {
+                   transform: translateY(-50px);
+               }
+                 &:nth-of-type(1) > div ul li a {
+                   display: block;
+                   height:60px; line-height: 60px;
+                   margin: 0px;
+                   box-sizing: border-box; 
+                   border-bottom: 1px solid #888;
+                   padding:0 20px;
+               }
+                 &:nth-of-type(1) > div ul li:first-child a{
+                   border-top: 1px solid #888;
+               }
+                 &:nth-of-type(2) {
+                   width:880px;
+                  /* height: 450px;*/
+                   box-sizing: border-box; 
+                   padding: 100px 0px 100px 70px;
+               }
+                 &:nth-of-type(2) h1 {
+                   font: 56px/1 'Nanum Myeongjo', 'arial';
+                   margin-bottom: 20px;
+               }
+                 &:nth-of-type(2) h2 {
+                   font: 24px/1.6 'Nanum Myeongjo', 'arial';
+                   margin-bottom:20px;
+                   color:#444;
+               }
+                 &:nth-of-type(2) p {
+                   margin-bottom:20px;
+                   font: 16px/1.8 'Nanum Myeongjo', 'arial';
+               }
+                 &:nth-of-type(2) a {
+                   display: block;
+               }
+                 &:nth-of-type(2) a::after{
+                   content: ' >';
+               }
+            }
+         }
+    }
+
+}
+
+@media screen and (max-width:$tablet) {
+            
+         /*post*/
+         #post {
+            padding-bottom: 50px;
+           .inner {
+                width: 100%; margin: 0 auto; 
+                 > h1 {text-indent: -9999px;}
+                .wrap {
+                   article {
+                       float:left;
+                       &:nth-of-type(1)  {width:35%; }
+                       &:nth-of-type(1) > div:nth-of-type(1) {
+                           margin: 0 20px;
+                       }
+                       &:nth-of-type(1) > div:nth-of-type(1) > i {
+                           font-size: 140px;
+                           margin-bottom: 20px;
+                       }
+                       &:nth-of-type(1) > div ul li a {
+                           height:100%;
+                           margin: 0 30px;
+                       }
+                       &:nth-of-type(2) {
+                           width: 65%;
+                           padding: 100px 100px 100px 70px;
+                       }
+                  }
+                }
+           }
+            
+                  
+       }
+}
+
+@media screen and (max-width:$mobile) {
+     
+     /*post*/
+     #post { 
+        padding-bottom: 50px;
+         .inner {
+             width: 100%; margin: 0 auto; 
+              > h1 {text-indent: -9999px;}
+              .wrap {
+                article {
+                    float:left;
+                    &:nth-of-type(1)  {width:100%; }
+                    &:nth-of-type(1) > div:nth-of-type(1) {
+                      height: 230px;
+                      transform: translateY(-60px);
+                      margin: 0 30px;
+                      padding: 30px 30px;
+                      }
+                      &:nth-of-type(1) > div:nth-of-type(1)::after{
+                          content: '';
+                          display: block;
+                          clear: both;
+                      }
+                      &:nth-of-type(1) > div:nth-of-type(1) > i {
+                          float: left;
+                          font-size: 160px;
+                          margin-bottom: 0px;
+                          line-height: 170px;
+                          margin-right: 50px;
+                      }
+                      &:nth-of-type(1) > div:nth-of-type(1) > div  {float:left;     padding: 30px 0px;}
+                      &:nth-of-type(1) > div:nth-of-type(1) > div > h2 {    
+                          margin-bottom: 30px;
+                          font-size: 30px;
+                      }
+                      &:nth-of-type(1) > div:nth-of-type(2) {
+                          transform: translateY(-10px);
+                      }
+                      &:nth-of-type(1) > div ul li a {
+              
+                          margin: 0 30px;
+                      }
+                      &:nth-of-type(2) {
+                          width: 100%;
+                          padding: 50px 30px;
+                      }
+                      &:nth-of-type(2) h1 {
+                          font: 38px/1 'Nanum Myeongjo', 'arial';
+                      }
+                      &:nth-of-type(2) h2 {
+                          font: 18px/1.6 'Nanum Myeongjo', 'arial';
+                      }
+                }
+              }
+            }
+
+    }
+}

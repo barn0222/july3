@@ -1,0 +1,82 @@
+
+/*header*/
+#header_sub {
+    width: 100%; position: absolute; top: 0; left: 0;  margin: 30px 0;  z-index: 10;
+     .inner {
+        width: 1180px; margin: 0 auto; height: 50px; box-sizing: border-box; position: relative;
+        h1 {
+            position: absolute; top:0; left:0;
+            i  {
+                color:#fff;
+                font-size: 50px;
+                line-height: 50px;
+            }
+        }
+    
+        #gnb {
+            position: absolute;  top: 0; left: 100px;
+                > li {
+                        float:left; position:relative;
+                        a {
+                            display: block;
+                            text-align: center;
+                            box-sizing: border-box;
+                            font-size: 14px;
+                            padding: 16px 20px;
+                            color:#fff;
+                            &:hover {
+                                color:lightblue
+                            }
+                            &.on {background:#777; color:#fff;box-sizing: border-box;}
+                        }
+                        >ul {
+                            position:absolute; top:50px; left:0px;
+                            display:none; z-index:3; width: 100%;
+                           >li{
+                               >a{
+                                    display:block; width:100%; height:50px; background:#777;
+                                    color:#bbb; text-align:center; transition:0.5s;
+                                    &:hover {background:#555; color:orange;}
+                               }
+                           }
+                        }
+                }
+            }
+       
+        .util {
+            position: absolute; top:0; right:0;
+             > li {
+                 float:left;
+                 a {
+                    display: block;
+                    padding: 15px 10px;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    color:#fff;
+                }
+                }
+        }
+       
+        .fa-bars {position: absolute; bottom: 13px; right: 30px; font-size: 24px; transition: .5s; display: none;
+        color:#fff;
+        }
+        .fa-bars:hover {
+            transform: scale(1.4);
+        } 
+    }
+}
+
+@media screen and (max-width:$tablet) {
+          /*header*/
+          #header .inner {
+            width: 100%;  height: 50px;
+            h1 {left: 30px;}
+            #gnb {display: none;} 
+            .util {display: none;} 
+            .fa-bars {display: block;}
+        }
+}
+
+@media screen and (max-width:$mobile) {
+
+}

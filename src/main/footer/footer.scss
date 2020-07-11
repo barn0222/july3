@@ -1,0 +1,218 @@
+
+/*footer*/
+#footer {
+    width:100%; padding:70px 0; background: #333;
+
+    .inner {
+        width:1180px;  margin: 0 auto;
+
+        &::after {content:''; clear:both; display: block;}
+        .footernav{
+            &::after {content:''; clear:both; display: block;}
+             .footermenu {
+                 float: left;
+                    li {
+                        float:left;
+                        a {
+                            font: 18px/1 'Nanum Myeongjo', 'arial'; color:#888; padding:25px 10px; display: block;
+                        }
+                    }
+                }
+             
+             .footermenu2 {
+                 float:right;
+                 li {
+                     float:left;
+                     a {
+                         display: block;     padding: 25px 20px;
+                         i {color:#888; font-size: 20px;}
+                    }
+                }
+            }
+        }
+        
+        .newsletter  {    
+            padding: 40px 0;
+            border-top: 1px solid #888;
+
+            &::after {content:''; clear:both; display: block;}
+             form {float:right;}
+             h2{    display: inline-block;
+                color: #888;
+                font: 24px/1 'Nanum Myeongjo', 'arial';
+                margin-right: 10px;
+                
+            }
+             label {color:#888;}
+             input {    padding: 5px;
+            }
+             select {    padding: 5px;
+            }
+             span {color:#888;}
+        }
+
+        .footermenu3 {
+            position: relative;
+            &::after {content:''; clear:both; display: block;}
+            address {width:100%;  border-top:1px solid #777; padding-top:40px; font:14px/1.7 'arial'; color:#888; letter-spacing:1px;}
+            
+             i {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 80px;
+                color: #444;
+                padding: 40px 0 0 0;
+            }
+        }
+        p {float:left; margin-top:30px; width:100%; font:11px/1 'arial'; color:#888; letter-spacing:1px; }
+    }
+}
+
+
+
+
+//tablet
+@media screen and (max-width:$tablet){
+        /*footer*/
+        #footer {    
+            padding: 50px 30px;  box-sizing: border-box; width:100%; padding:70px 30px; background: #333;
+            .inner {
+                width:100%;
+                &::after {content:''; clear:both; display: block;}
+
+                 .footernav{
+                    &::after {content:''; clear:both; display: block;}
+                    .footermenu {
+                        float: left;
+                        li {
+                            float:left;
+                            a {
+                                font: 18px/1 'Nanum Myeongjo', 'arial';
+                                color:#888; padding:25px 10px; display: block;}
+                        }
+                    }
+                    .footermenu2 {
+                        float:right;
+                        li {
+                            float:left;
+                            a {
+                                display: block;     padding: 25px 20px;
+                                i {color:#888; font-size: 20px;}
+                            }
+                        }
+                    }
+                 }
+                 
+       
+
+                 .newsletter  {    
+                    padding: 40px 0;
+                    border-top: 1px solid #888;
+                    &::after {content:''; clear:both; display: block;}
+                    form {float:right;}
+                    h2{    display: inline-block;
+                      color: #888;
+                      font: 24px/1 'Nanum Myeongjo', 'arial';
+                      margin-right: 10px;
+                      
+                  }
+                    label {color:#888;}
+                    input {    padding: 5px;
+                  }
+                    select {    padding: 5px;
+                  }
+                    span {color:#888;}
+                }
+                 
+     
+
+                 .footermenu3 {
+                     position: relative;
+                     &::after {content:''; clear:both; display: block;}
+                     address {width:100%;  border-top:1px solid #777; padding-top:40px; font:14px/1.7 'arial'; color:#888; letter-spacing:1px;}
+                     i {
+                       display: none;   
+                     }
+                }
+                 p {float:left; margin-top:30px; width:100%; font:11px/1 'arial'; color:#888; letter-spacing:1px; }
+                 
+            }
+        }
+        
+
+}
+//mobile
+@media screen and (max-width:$mobile){
+    /*footer*/
+    #footer {    
+        padding: 50px 30px; box-sizing: border-box;
+        .inner {
+            width:100%;
+            &::after {content:''; clear:both; display: block;}
+
+            .footernav{
+                &::after {content:''; clear:both; display: block;}
+                .footermenu {
+                    float: left;
+                    li {
+                        float:left;
+                        a {
+                            font: 18px/1 'Nanum Myeongjo', 'arial';
+                            color:#888; padding:25px 10px; display: block;}
+                    }
+                }
+                .footermenu2 {
+                    float:left;
+                    li {
+                        float:left;
+                        a {
+                            display: block;     padding: 25px 20px;
+                            i {color:#888; font-size: 20px;}
+                        }
+                    }
+                }
+            }
+            
+            
+
+            .newsletter  {    
+               padding: 40px 0; border-top: 1px solid #888;
+               &::after {content:''; clear:both; display: block;}
+               form {float:left;}
+               h2{    display: block;
+                 color: #888;
+                 font: 24px/1 'Nanum Myeongjo', 'arial';
+                 margin-right: 0px;
+                 margin-bottom: 20px;
+                }
+                label {color:#888;}
+                input {    padding: 5px;
+                }
+                select {    padding: 5px;
+                }
+                span {color:#888;}
+           }
+            
+
+
+            .footermenu3 {
+                position: relative;
+                &::after {content:''; clear:both; display: block;}
+                address {width:100%;  border-top:1px solid #777; padding-top:40px; font:14px/1.7 'arial'; color:#888; letter-spacing:1px;}
+          
+                i {
+                display: none;   
+              }
+            }
+            
+     
+
+           p {float:left; margin-top:30px; width:100%; font:11px/1 'arial'; color:#888; letter-spacing:1px; }
+        }
+    }
+
+
+
+
+}

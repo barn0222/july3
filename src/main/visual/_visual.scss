@@ -1,0 +1,226 @@
+/*visual*/
+#visual {
+    width: 100%; height: 100vh; 
+    background: #000;
+    .inner {
+        .wrap{
+            &::after {content: ''; display: block; clear: both;}
+            .left { 
+                    width: 75%;
+                    float: left;
+                    position: relative;
+                    &::after {content: ''; display: block; clear: both;}
+                    article {
+                        float:left;
+                        &:nth-of-type(1) {
+                            width: 100%; height:calc(100vh - 118px);  position: relative;
+                            &#slider1 {
+                                overflow:hidden; 
+                                
+                            }
+                            .button {
+                                position: absolute;
+                                bottom: 0;
+                                right:25%; 
+                                transition: 0.5s;
+                                a {
+                                    display: block; float: left; 
+                                    img {
+                                        display: block; width: 93px; height: 93px;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            width: 100%; height:118px; 
+                            background: #fff;
+                        }
+                        &:nth-of-type(3) {
+                            position: absolute;
+                            bottom: 0px; right:0px;
+                            width: 25%; height:211px; 
+                            background: #000;
+                            color:#fff; padding: 40px 30px; box-sizing: border-box; 
+                            transition: 0.5s;
+                            h1 {
+                                font-size: 24px;
+                                margin-bottom: 10px;
+                            }
+                            p {
+                                font-size: 14px;
+                                letter-spacing: 4px;
+                            }
+                        }
+                    }
+            }
+            .right {
+                float: left;
+                width: 25%;
+                &::after {content: ''; display: block; clear: both;}
+                article {
+                    float:left;
+                    &:nth-of-type(1) {
+                        width: 100%; height:calc(100vh - 211px); 
+                        background: url(../img/visual_img3.PNG) no-repeat center/cover; 
+                        transition: 0.5s;
+                    }
+                    &:nth-of-type(2) {
+                        width: 100%; height:211px; 
+                        transition: 0.5s;
+                        &#slider0  {
+                            overflow:hidden; 
+                            >ul {
+                                width:calc(100% * 3); height:100%; margin-left:-100%; 
+                                >li {
+                                    width:calc(100% / 3); height:100%; float:left; font-size:80px; display:flex; justify-content:center; align-items:center;
+                                    &.b1 {background: url(../img/visual_img1.jpg) no-repeat center/cover; }
+                                    &.b2 {background: url(../img/visual_img2.jpg) no-repeat center/cover;}
+                                    &.b3 {background: url(../img/visual_img4.PNG) no-repeat center/cover; }
+                                }
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$tablet) {
+/*visual*/
+#visual {
+    .inner {
+        .wrap{
+                .left { 
+                        width: 100%;
+                        float: left;
+                        position: relative;
+                        article {
+                            float:left;
+                            &:nth-of-type(1) {
+                                width: 100%; height:85vh;  position: relative;
+                                &#slider1 {
+                                    overflow:hidden; 
+                                }
+                                .button {
+                                    position: absolute;
+                                    bottom: 0;
+                                    left:25%;
+                                    a {
+                                        display: block; float: left;
+                                    }
+                                }
+                            }
+                            &:nth-of-type(2) {
+                                width: 100%; height:15vh; 
+                                background: #fff;
+                            }
+                            &:nth-of-type(3) {
+                                position: absolute;
+                                bottom: 15vh; left:0px;
+                                width: 25%; height:25vh; 
+                                background: #000;
+                                color:#fff; padding: 40px 30px; box-sizing: border-box;
+                                h1 {
+                                    font-size: 24px;
+                                    margin-bottom: 10px;
+                                }
+                                p {
+                                    font-size: 14px;
+                                    letter-spacing: 4px;
+                                }
+                            }
+                        }
+                }
+                .right {
+                    position: absolute;
+                    top:15%; right:30px;
+                    width: 40%;
+                    
+                    &::after {content: ''; display: block; clear: both;}
+                    article {
+                        float:left;
+                        &:nth-of-type(1) {
+                            width: 100%; height:60vh; 
+                            background: url(../img/visual_img3.PNG) no-repeat center/cover;
+                            margin-bottom: 15px;
+                        }
+                        &:nth-of-type(2) {
+                            width: 100%; height:20vh; 
+                            &#slider0  {overflow:hidden; }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobile) {
+    /*visual*/
+#visual {
+    .inner {
+        .wrap{
+                .left { 
+                        width: 100%;
+                        float: left;
+                        position: relative;
+                        article {
+                            float:left;
+                            &:nth-of-type(1) {
+                                width: 100%; height:85vh;  position: relative;
+                                &#slider1 {
+                                    overflow:hidden; 
+                                }
+                                .button {
+                                    position: absolute;
+                                    bottom: 0;
+                                    left:0%;
+                                    a {
+                                        display: block; float: left;
+                                    }
+                                }
+                            }
+                            &:nth-of-type(2) {
+                                display: none;
+                            }
+                            &:nth-of-type(3) {
+                                position: relative;
+                                bottom: 0vh; left:0px;
+                                width: 100%; height:25vh; 
+                                background: #000;
+                                color:#fff; padding: 40px 30px; box-sizing: border-box;
+                                h1 {
+                                    font-size: 24px;
+                                    margin-bottom: 10px;
+                                }
+                                p {
+                                    font-size: 14px;
+                                    letter-spacing: 4px;
+                                }
+                            }
+                        }
+                }
+                .right {
+                    position: relative;
+                    top:0%; right: 0px;
+                    width: 100%;
+                    
+                    &::after {content: ''; display: block; clear: both;}
+                    article {
+                        float:left;
+                        &:nth-of-type(1) {
+                            width: 100%; height:100vh; 
+                            background: url(../img/visual_img3.PNG) no-repeat center/cover;
+                            margin-bottom: 0px;
+                        }
+                        &:nth-of-type(2) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
